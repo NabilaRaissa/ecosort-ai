@@ -1,10 +1,12 @@
 /* Hero Section */
 .hero-section {
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-    padding: 60px 20px;
-    min-height: 600px;
+    min-height: 700px;
     display: flex;
     align-items: center;
+    padding-top: 200px;   /* jarak dari atas */
+    padding-bottom: 250px;
+
 }
 
 .hero-content h1 {
@@ -29,9 +31,64 @@
     line-height: 1.8;
 }
 
-.hero-image {
-    text-align: center;
+/* ===== HERO ROBOT ANIMATION ===== */
+.hero-stand {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
+
+.hero-img {
+  width: 350px;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.35));
+  animation: heroFloat 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+/* Efek saat hover */
+.hero-img:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+/* Bayangan di bawah gambar */
+.hero-stand::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 120px;
+  height: 20px;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.3) 0%, transparent 70%);
+  transform: translateX(-50%);
+  filter: blur(5px);
+  opacity: 0.7;
+}
+
+/* Animasi melayang */
+@keyframes heroFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .hero-img {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    width: 200px;
+  }
+}
+
 
 .hero-image img {
     max-width: 100%;
@@ -47,6 +104,32 @@
     50% {
         transform: translateY(-20px);
     }
+}
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #15803d; /* hijau tua */
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 9999px; /* full rounded */
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cta-btn:hover {
+    background-color: #166534;
+    transform: scale(1.03);
+}
+
+.cta-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Category Cards */
@@ -94,6 +177,8 @@
 .gallery-section {
     padding: 60px 20px;
     background-color: #f9fafb;
+    padding-top: 200px;   /* jarak dari atas */
+    padding-bottom: 250px;  
 }
 
 .gallery-grid {
@@ -168,4 +253,17 @@
     .category-cards {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+/* Perluas area kosong di sekitar kartu tim (Our Team) */
+section.bg-gray-50.py-16 {
+  padding-top: 200px;   /* jarak dari atas */
+  padding-bottom: 250px; /* jarak ke bawah */
+}
+section[style*="background-color: #16a34a"] {
+  padding-top: 180px !important;
+  padding-bottom: 180px !important;
+}
+.hero-section-extended {
+  padding-top: 180px;
+  padding-bottom: 180px;
 }

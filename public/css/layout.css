@@ -1,0 +1,201 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 50;
+  padding: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* biar kontennya lebar */
+nav.navbar .max-w-7xl {
+  max-width: 90%;
+}
+
+/* Logo */
+nav.navbar h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #15803d;
+}
+
+/* Link navbar */
+nav.navbar a {
+  color: #15803d !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: color 0.3s;
+}
+
+nav.navbar a:hover {
+  color: #166534 !important;
+}
+
+/* Tombol CTA */
+nav.navbar button {
+  background-color: #15803d;
+  color: white;
+  padding: 0.75rem 1.8rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 10px rgba(22, 101, 52, 0.3);
+}
+
+nav.navbar button:hover {
+  background-color: #166534;
+  transform: translateY(-2px);
+}
+/* ===== FOOTER FIX ===== */
+footer {
+  position: relative;
+  overflow: visible; /* biar robot bisa nongol keluar */
+  background-color: #16a34a; /* hijau tua */
+  color: white;
+  padding-top: 40px;     /* semula bisa 80px atau lebih — dikurangi */
+  padding-bottom: 30px;/* tinggi proporsional */
+}
+
+/* Kolom isi footer */
+footer h3 {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer a {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+/* Geser teks footer biar tidak mepet robot */
+footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding-right: 320px; /* ruang kosong di kanan untuk robot */
+}
+
+/* Sesuaikan jarak antar kolom */
+@media (max-width: 1024px) {
+  footer .footer-grid {
+    padding-right: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footer-grid {
+    padding-right: 0;
+  }
+}
+
+/* ===== KONTAK & SOSIAL MEDIA ===== */
+footer .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+footer .contact-item:hover {
+  color: #d1fae5; /* hijau muda saat hover */
+  transform: translateX(4px);
+}
+
+footer .contact-icon {
+  background-color: #22c55e; /* hijau terang */
+  color: white;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== ROBOT FIX ===== */
+.robot-stand {
+  position: absolute;
+  right: 4rem;
+  bottom: 85px; /* posisi pas di batas hijau */
+  z-index: 30;
+}
+
+.robot-img {
+  width: 500px;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.35));
+  transition: transform 0.3s ease;
+}
+
+.robot-img:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+/* Bayangan kaki */
+.robot-stand::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 120px;
+  height: 20px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, transparent 70%);
+  transform: translateX(-50%);
+  filter: blur(5px);
+  opacity: 0.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .robot-stand {
+    right: 2rem;
+    bottom: 70px;
+  }
+  .robot-img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .robot-stand {
+    right: 1rem;
+    bottom: 50px;
+  }
+  .robot-img {
+    width: 200px;
+  }
+}
+/* Geser copyright agar lebih ke tengah (tidak nabrak robot) */
+footer .copyright {
+  text-align: center;
+  margin-right: 260px; /* beri ruang agar tidak mepet robot */
+}
+
+@media (max-width: 1024px) {
+  footer .copyright {
+    margin-right: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .copyright {
+    margin-right: 0; /* di hp biar tetap di tengah */
+  }
+}
