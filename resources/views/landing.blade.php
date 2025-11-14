@@ -169,10 +169,10 @@
             <a href="https://www.instagram.com/gabysetiawan17?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" 
                class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 block no-underline">
                 <div class="flex flex-col items-center p-6">
-                    <img src="{{ asset('storage/images/gabe.jpg') }}" alt="Gabriella Fajar Setiawan"
+                    <img src="{{ asset('storage/images/gabe2.jpg') }}" alt="Gabriella Fajar Setiawan"
                         class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-green-200 shadow-md">
                     <h3 class="text-lg font-semibold text-gray-900">Gabriella Fajar Setiawan</h3>
-                    <p class="text-sm text-gray-600">Project Leader</p>
+                    <p class="text-sm text-gray-600">Hustler</p>
                 </div>
             </a>
 
@@ -180,10 +180,10 @@
             <a href="https://www.instagram.com/haycell._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" 
                class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 block no-underline">
                 <div class="flex flex-col items-center p-6">
-                    <img src="{{ asset('storage/images/ceces.jpg') }}" alt="Marcelina Septya Safira"
+                    <img src="{{ asset('storage/images/ceces2.jpg') }}" alt="Marcelina Septya Safira"
                         class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-green-200 shadow-md">
                     <h3 class="text-lg font-semibold text-gray-900">Marcelina Septya Safira</h3>
-                    <p class="text-sm text-gray-600">BackEnd Development</p>
+                    <p class="text-sm text-gray-600">AI Specialist</p>
                 </div>
             </a>
 
@@ -202,7 +202,7 @@
             <a href="https://www.instagram.com/kaylarrj?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" 
                class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 block no-underline">
                 <div class="flex flex-col items-center p-6">
-                    <img src="{{ asset('storage/images/kayla.jpg') }}" alt="Kayla Reyvani Junaidi"
+                    <img src="{{ asset('storage/images/kayla8.jpg') }}" alt="Kayla Reyvani Junaidi"
                         class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-green-200 shadow-md">
                     <h3 class="text-lg font-semibold text-gray-900">Kayla Reyvani Junaidi</h3>
                     <p class="text-sm text-gray-600">FrontEnd Development</p>
