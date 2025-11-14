@@ -233,4 +233,5 @@
         </div>
     </div>
 </section>
+POST /chatbot
 @endsection

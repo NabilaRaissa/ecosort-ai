@@ -13,3 +13,7 @@ Route::get('/explore', function () {
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+Route::get('/chatbot', function () {
+    return view('chatbot');
+})->name('chatbot');

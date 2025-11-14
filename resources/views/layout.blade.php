@@ -36,7 +36,7 @@
                     <a href="#about-hero"
                         class="text-green-700 hover:text-green-800 transition font-semibold">About Us</a>
                     <a href="{{ route('explore') }}"
-                        class="text-green-700 hover:text-green-800 transition font-semibold">Explore</a>
+                        class="text-green-700 hover:text-green-800 transition font-semibold">EcoBot</a>
                 </div>
 
                 <!-- CTA Button -->
@@ -56,7 +56,7 @@
         <!-- Tentang -->
         <div>
             <h3 class="text-xl font-bold mb-4">Tentang EcoSort</h3>
-            <p>EcoSort AI adalah sistem pintar untuk mendeteksi dan memilah sampah secara otomatis...</p>
+            <p>EcoSort AI adalah sistem pintar berbasis kecerdasan buatan yang berfungsi untuk mendeteksi dan mengklasifikasikan jenis sampah: Plastik, Logam, dan Kertas menggunakan kamera.</p>
         </div>
 
         <!-- Navigasi Cepat -->
@@ -65,7 +65,7 @@
             <ul class="space-y-2 text-sm">
                 <li><a href="{{ route('home') }}" class="hover:text-gray-100 transition">Home</a></li>
                 <li><a href="#baout-hero" class="hover:text-gray-100 transition">About Us</a></li>
-                <li><a href="{{ route('explore') }}" class="hover:text-gray-100 transition">Explore</a></li>
+                <li><a href="{{ route('explore') }}" class="hover:text-gray-100 transition">EcoBot</a></li>
             </ul>
         </div>
 
@@ -79,11 +79,11 @@
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📧</div>
-                    <a href="mailto:ecosort.ai@gmail.com">ecosort.ai@gmail.com</a>
+                    <a href="SMK Telkom Sidoarjo">SMK Telkom Sidoarjo</a>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📱</div>
-                    <a href="tel:+628123456789">+62 812-3456-7890</a>
+                    <a href="Inkubasi Project">Inkubasi Project</a>
                 </div>
             </div>
         </div>
@@ -97,7 +97,7 @@
     <!-- Copyright -->
     <div class=" pt-20 mt-100 text-white text-sm copyright">
         <p>&copy; 2025 EcoSort AI. All rights reserved.</p>
-        <p>Dibuat oleh Tim EcoSort.</p>
+        <p>Dibuat oleh Tim EcoSort-AI.</p>
     </div>
 </footer>
 </body>
