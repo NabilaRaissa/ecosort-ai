@@ -32,8 +32,8 @@
                 <!-- Navigation Menu -->
                 <div class="hidden md:flex space-x-8">
                     <a href="{{ route('home') }}"
-                        class="text-green-700 hover:text-green-800 transition font-semibold">Beranda</a>
-                    <a href="{{ route('about') }}"
+                        class="text-green-700 hover:text-green-800 transition font-semibold">Home</a>
+                    <a href="#about-hero"
                         class="text-green-700 hover:text-green-800 transition font-semibold">About Us</a>
                     <a href="{{ route('explore') }}"
                         class="text-green-700 hover:text-green-800 transition font-semibold">Explore</a>
@@ -63,8 +63,8 @@
         <div>
             <h3 class="text-xl font-bold mb-4">Navigasi Cepat</h3>
             <ul class="space-y-2 text-sm">
-                <li><a href="{{ route('home') }}" class="hover:text-gray-100 transition">Beranda</a></li>
-                <li><a href="{{ route('about') }}" class="hover:text-gray-100 transition">About Us</a></li>
+                <li><a href="{{ route('home') }}" class="hover:text-gray-100 transition">Home</a></li>
+                <li><a href="#baout-hero" class="hover:text-gray-100 transition">About Us</a></li>
                 <li><a href="{{ route('explore') }}" class="hover:text-gray-100 transition">Explore</a></li>
             </ul>
         </div>

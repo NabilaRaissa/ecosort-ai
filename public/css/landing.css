@@ -199,7 +199,7 @@
 
 .gallery-item img {
     width: 100%;
-    height: 100%;
+    height: 90px;
     object-fit: cover;
     transition: transform 0.3s;
 }
@@ -260,10 +260,61 @@ section.bg-gray-50.py-16 {
   padding-bottom: 250px; /* jarak ke bawah */
 }
 section[style*="background-color: #16a34a"] {
-  padding-top: 180px !important;
-  padding-bottom: 180px !important;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
 }
 .hero-section-extended {
   padding-top: 180px;
   padding-bottom: 180px;
+}
+/* ABOUT US */
+.about-us h2 {
+    font-size: 30px;   /* Lebih besar dari default */
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.about-us p {
+    font-size: 20px;   /* Perbesar teks paragraf */
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 1rem;
+}
+.gallery-card {
+    width: 100%;
+    max-width: 220px;    /* batasan lebar maksimal */
+    height: 220px;       /* tinggi tetap untuk konsistensi */
+    object-fit: cover;   /* agar gambar tidak terdistorsi */
+    border-radius: 16px; /* sudut lebih rounded */
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* bayangan lebih halus */
+    transition: all 0.3s ease; /* animasi smooth */
+}
+
+.gallery-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 768px) {
+    .gallery-card {
+        max-width: 150px;
+        height: 150px;
+    }
+}
+/* Remove underline from team card links */
+a.no-underline {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.no-underline:hover {
+    text-decoration: none;
+}
+
+/* Ensure cursor pointer on team cards */
+a[href*="instagram.com"] {
+    cursor: pointer;
 }

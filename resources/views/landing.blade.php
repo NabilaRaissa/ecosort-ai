@@ -28,76 +28,74 @@
 
 
     <!-- Waste Categories -->
-    <div class="col-span-2 mt-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <!-- Plastik -->
-            <div class="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl hover:scale-105 hover:border-green-400 border border-transparent transition-all duration-300 flex items-center space-x-4">
-                <div class="w-20 h-20 rounded-full overflow-hidden shadow-lg flex-shrink-0">
-                    <img src="{{ asset('storage/images/plastik.png') }}" alt="Plastik" class="w-full h-full object-cover">
-                </div>
-                <h3 class="font-semibold text-gray-900 text-lg">Plastik</h3>
-            </div>
+    <!-- Waste Categories -->
+<div class="col-span-2 mt-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
 
-            <!-- Kertas -->
-            <div class="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl hover:scale-105 hover:border-green-400 border border-transparent transition-all duration-300 flex items-center space-x-4">
-                <div class="w-20 h-20 rounded-full overflow-hidden shadow-lg flex-shrink-0">
-                    <img src="{{ asset('storage/images/kertas.png') }}" alt="Kertas" class="w-full h-full object-cover">
-                </div>
-                <h3 class="font-semibold text-gray-900 text-lg">Kertas</h3>
+        <!-- Plastik -->
+        <div class="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl hover:scale-105 hover:border-green-400 border border-transparent transition-all duration-300 flex items-center gap-4 w-full max-w-[350px]">
+            <div class="w-20 h-20 rounded-full overflow-hidden shadow-lg">
+                <img src="{{ asset('storage/images/plastik.png') }}" alt="Plastik" class="w-full h-full object-cover">
             </div>
-
-            <!-- Logam -->
-            <div class="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl hover:scale-105 hover:border-green-400 border border-transparent transition-all duration-300 flex items-center space-x-4">
-                <div class="w-20 h-20 rounded-full overflow-hidden shadow-lg flex-shrink-0">
-                    <img src="{{ asset('storage/images/logam.png') }}" alt="Logam" class="w-full h-full object-cover">
-                </div>
-                <h3 class="font-semibold text-gray-900 text-lg">Logam</h3>
-            </div>
-
-            <!-- Organik -->
-            <div class="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl hover:scale-105 hover:border-green-400 border border-transparent transition-all duration-300 flex items-center space-x-4">
-                <div class="w-20 h-20 rounded-full overflow-hidden shadow-lg flex-shrink-0">
-                    <img src="{{ asset('storage/images/organik.png') }}" alt="Organik" class="w-full h-full object-cover">
-                </div>
-                <h3 class="font-semibold text-gray-900 text-lg">Organik</h3>
-            </div>
-
+            <h3 class="font-semibold text-gray-900 text-lg">Plastik</h3>
         </div>
+
+        <!-- Kertas -->
+        <div class="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl hover:scale-105 hover:border-green-400 border border-transparent transition-all duration-300 flex items-center gap-4 w-full max-w-[350px]">
+            <div class="w-20 h-20 rounded-full overflow-hidden shadow-lg">
+                <img src="{{ asset('storage/images/kertas.png') }}" alt="Kertas" class="w-full h-full object-cover">
+            </div>
+            <h3 class="font-semibold text-gray-900 text-lg">Kertas</h3>
+        </div>
+
+        <!-- Logam -->
+        <div class="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl hover:scale-105 hover:border-green-400 border border-transparent transition-all duration-300 flex items-center gap-4 w-full max-w-[350px]">
+            <div class="w-20 h-20 rounded-full overflow-hidden shadow-lg">
+                <img src="{{ asset('storage/images/logam.png') }}" alt="Logam" class="w-full h-full object-cover">
+            </div>
+            <h3 class="font-semibold text-gray-900 text-lg">Logam</h3>
+        </div>
+
     </div>
+</div>
+
 </section>
 
 
 
 
     <!-- Gallery & About Section with green background -->
-    <section style="background-color: #16a34a; padding: 60px 20px;">
+    <section id="about-hero" style="background-color: #16a34a; padding: 50px 50px;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Gallery -->
-                <div class="grid grid-cols-2 gap-4">
-                    <img src="{{  asset('storage/images/wayang.png')}}" alt="Gallery 1"
-                        class="rounded-lg w-full h-40 object-cover">
-                    <img src="{{  asset('storage/images/borubudur.png')}}" alt="Gallery 2"
-                        class="rounded-lg w-full h-40 object-cover">
-                    <img src="{{  asset('storage/images/foods.png')}}" alt="Gallery 3"
-                        class="rounded-lg w-full h-40 object-cover">
-                    <img src="{{  asset('storage/images/saman.png')}}" alt="Gallery 4"
-                        class="rounded-lg w-full h-40 object-cover">
-                </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        <!-- Gallery (kiri) -->
+        <div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="{{ asset('storage/images/1.jpg') }}" class="gallery-card" alt="Gallery 1">
+                <img src="{{ asset('storage/images/2.jpg') }}" class="gallery-card" alt="Gallery 2">
+                <img src="{{ asset('storage/images/3.jpg') }}" class="gallery-card" alt="Gallery 3">
+                <img src="{{ asset('storage/images/4.jpg') }}" class="gallery-card" alt="Gallery 4">
+            </div>
+        </div>
 
-                <!-- About Us -->
-                <div>
-                    <h2 class="text-3xl font-bold text-white mb-6">About Us</h2>
-                    <p class="text-white leading-relaxed mb-4">
-                        EcoSort AI adalah sistem cerdas berbasis kecerdasan buatan yang mampu mendeteksi dan memilah jenis
-                        sampah secara otomatis melalui kamera.
-                    </p>
-                    <p class="text-white leading-relaxed">
-                        Kami hadir untuk membantu menciptakan lingkungan yang lebih bersih, efisien, dan berkelanjutan
-                        dengan memanfaatkan teknologi AI.
-                    </p>
-                </div>
+        <!-- About Us (kanan) -->
+        <div class="text-white">
+            <h2 class="text-4xl font-bold mb-6">About Us</h2>
+            <p class="mb-4 text-lg leading-relaxed">
+                EcoSort AI adalah sistem cerdas berbasis kecerdasan buatan yang mampu 
+                mendeteksi dan memilah jenis sampah secara otomatis melalui kamera.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Kami hadir untuk membantu menciptakan lingkungan yang lebih bersih,
+                efisien, dan berkelanjutan dengan memanfaatkan teknologi AI.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
             </div>
         </div>
     </section>
@@ -158,74 +156,80 @@
         </div>
     </section>
 
-    <!-- Our Tim Section -->
+<!-- Our Tim Section -->
 <section class="bg-gray-50 min-h-[800px] py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-gray-900">Our Team</h2>
-             <h3 class="text-3xl font-bold text-gray-900">Pretty Girl XII SIJA 1</h2>
+            <h3 class="text-3xl font-bold text-gray-900">Pretty Girl XII SIJA 1</h3>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <!-- Tim Member 1 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1">
+            <!-- Tim Member 1 - Gabriella -->
+            <a href="https://www.instagram.com/gabysetiawan17?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" 
+               class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 block no-underline">
                 <div class="flex flex-col items-center p-6">
-                    <img src="{{ asset('storage/images/gabe.jpg') }}" alt="Tim Member 1"
+                    <img src="{{ asset('storage/images/gabe.jpg') }}" alt="Gabriella Fajar Setiawan"
                         class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-green-200 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">Gabe</h3>
+                    <h3 class="text-lg font-semibold text-gray-900">Gabriella Fajar Setiawan</h3>
                     <p class="text-sm text-gray-600">Project Leader</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- Tim Member 2 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1">
+            <!-- Tim Member 2 - Marcelina -->
+            <a href="https://www.instagram.com/haycell._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" 
+               class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 block no-underline">
                 <div class="flex flex-col items-center p-6">
-                    <img src="{{ asset('storage/images/ceces.jpg') }}" alt="Tim Member 2"
+                    <img src="{{ asset('storage/images/ceces.jpg') }}" alt="Marcelina Septya Safira"
                         class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-green-200 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">Ceces</h3>
-                    <p class="text-sm text-gray-600">-</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Marcelina Septya Safira</h3>
+                    <p class="text-sm text-gray-600">BackEnd Development</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- Tim Member 3 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1">
+            <!-- Tim Member 3 - Nabila -->
+            <a href="https://www.instagram.com/nbilare_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" 
+               class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 block no-underline">
                 <div class="flex flex-col items-center p-6">
-                    <img src="{{ asset('storage/images/kobil.jpg') }}" alt="Tim Member 3"
+                    <img src="{{ asset('storage/images/kobil.jpg') }}" alt="Nabila Raisa Evelyna"
                         class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-green-200 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">Kobil</h3>
-                    <p class="text-sm text-gray-600">-</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Nabila Raisa Evelyna</h3>
+                    <p class="text-sm text-gray-600">BackEnd Development</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- Tim Member 4 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1">
+            <!-- Tim Member 4 - Kayla -->
+            <a href="https://www.instagram.com/kaylarrj?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" 
+               class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 block no-underline">
                 <div class="flex flex-col items-center p-6">
-                    <img src="{{ asset('storage/images/kayla.jpg') }}" alt="Tim Member 4"
+                    <img src="{{ asset('storage/images/kayla.jpg') }}" alt="Kayla Reyvani Junaidi"
                         class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-green-200 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">Muhamad Fikril Khakim</h3>
-                    <p class="text-sm text-gray-600">aku</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Kayla Reyvani Junaidi</h3>
+                    <p class="text-sm text-gray-600">FrontEnd Development</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- Tim Member 5 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1">
+            <!-- Tim Member 5 - Larissa -->
+            <a href="https://www.instagram.com/vkdnfflsk_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" 
+               class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 block no-underline">
                 <div class="flex flex-col items-center p-6">
-                    <img src="{{ asset('storage/images/laris.jpg') }}" alt="Tim Member 5"
+                    <img src="{{ asset('storage/images/laris.jpg') }}" alt="Larissa Paulina Christmas Hutauruk"
                         class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-green-200 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">laris</h3>
-                    <p class="text-sm text-gray-600">ngok</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Larissa Paulina Christmas Hutauruk</h3>
+                    <p class="text-sm text-gray-600">FrontEnd Development</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- Tim Member 6 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1">
+            <!-- Tim Member 6 - Maudina -->
+            <a href="https://www.instagram.com/mogiimud_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" 
+               class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition transform hover:-translate-y-1 block no-underline">
                 <div class="flex flex-col items-center p-6">
-                    <img src="{{ asset('storage/images/modi.jpg') }}" alt="Tim Member 6"
+                    <img src="{{ asset('storage/images/modi.jpg') }}" alt="Maudina Mey Nur Hidayah"
                         class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-green-200 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">mogimud</h3>
-                    <p class="text-sm text-gray-600">hayuuu</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Maudina Mey Nur Hidayah</h3>
+                    <p class="text-sm text-gray-600">UI/UX Designer</p>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>
