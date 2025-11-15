@@ -276,7 +276,8 @@
       }
 
       const json = await res.json();
-      const botResponse = json?.data?.bot_response ?? "Maaf, aku tidak bisa menjawab pertanyaan itu.";
+      const botResponse = json.reply ?? "Maaf, aku tidak bisa menjawab pertanyaan itu.";
+
 
       // Bot reply
       const botEl = createMessageElement({ who: 'bot', text: botResponse });

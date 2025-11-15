@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\ChatbotController;
 
 Route::get('/', function () {
     return view('landing');
@@ -17,3 +18,6 @@ Route::get('/about', function () {
 Route::get('/chatbot', function () {
     return view('chatbot');
 })->name('chatbot');
+
+// 🔥 ROUTE PENTING UNTUK CHATBOT
+Route::post('/chatbot', [ChatbotController::class, 'chat']);
