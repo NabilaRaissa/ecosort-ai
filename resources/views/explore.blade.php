@@ -11,9 +11,9 @@
     --muted: #7b8794;
   }
 
-  /* wrapper: beri jarak dari navbar supaya tidak ketutup */
+  /* wrapper */
   .chat-wrapper {
-    margin-top: 110px; /* sesuaikan kalau navbar lebih tinggi */
+    margin-top: 110px;
     display: flex;
     justify-content: center;
     padding: 28px 16px;
@@ -21,7 +21,6 @@
     min-height: calc(100vh - 110px);
   }
 
-  /* floating card */
   .chat-card {
     width: 100%;
     max-width: 880px;
@@ -35,9 +34,9 @@
     border: 1px solid rgba(15,169,88,0.06);
   }
 
-  /* left: chat area */
+  /* chat area */
   .chat-area {
-    padding: 18px 18px 12px 18px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -50,11 +49,14 @@
     padding-bottom:8px;
   }
   .chat-header .avatar {
-    width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--eco-green-soft),var(--eco-green));
-    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;box-shadow:0 4px 12px rgba(15,169,88,0.18);
+    width:48px; height:48px; border-radius:12px;
+    background: linear-gradient(135deg,var(--eco-green-soft),var(--eco-green));
+    display:flex; align-items:center; justify-content:center;
+    color:#fff; font-weight:700;
+    box-shadow:0 4px 12px rgba(15,169,88,0.18);
   }
-  .chat-header h3 { margin:0;font-size:18px }
-  .chat-header p { margin:0;color:var(--muted);font-size:13px }
+  .chat-header h3 { margin:0; font-size:18px }
+  .chat-header p { margin:0; color:var(--muted); font-size:13px }
 
   #chat-container {
     flex:1;
@@ -65,13 +67,8 @@
     gap:10px;
   }
 
-  /* message bubble */
-  .msg {
-    display:flex;
-    gap:10px;
-    align-items:flex-end;
-    width:100%;
-  }
+  /* messages */
+  .msg { display:flex; gap:10px; align-items:flex-end; width:100%; }
   .msg .bubble {
     padding:12px 14px;
     border-radius:14px;
@@ -83,35 +80,28 @@
   }
   @keyframes msgIn { from { opacity: 0; transform: translateY(6px) } to { opacity:1; transform:translateY(0) } }
 
-  /* bot (left) */
   .msg.bot { justify-content:flex-start; }
-  .msg.bot .avatar-sm { width:36px;height:36px;border-radius:8px;background:var(--eco-green-soft);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;flex-shrink:0 }
-  .msg.bot .bubble { background: #f3f9f4; color: #1f2937; border-top-left-radius:6px; }
+  .msg.bot .avatar-sm {
+    width:36px;height:36px;border-radius:8px;background:var(--eco-green-soft);
+    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;flex-shrink:0;
+  }
+  .msg.bot .bubble { background:#f3f9f4;color:#1f2937;border-top-left-radius:6px; }
 
-  /* user (right) */
   .msg.user { justify-content:flex-end; flex-direction:row-reverse; }
-  .msg.user .avatar-sm { width:36px;height:36px;border-radius:8px;background:#cfeeda;display:flex;align-items:center;justify-content:center;color:#064a2f;font-weight:700;flex-shrink:0 }
-  .msg.user .bubble { background: linear-gradient(90deg, #dcf8e3, #bff0c6); color:#063a22; border-top-right-radius:6px; }
+  .msg.user .avatar-sm {
+    width:36px;height:36px;border-radius:8px;background:#cfeeda;
+    display:flex;align-items:center;justify-content:center;color:#064a2f;font-weight:700;flex-shrink:0;
+  }
+  .msg.user .bubble { background: linear-gradient(90deg,#dcf8e3,#bff0c6); color:#063a22; border-top-right-radius:6px; }
 
   /* typing indicator */
-  .typing {
-    display:flex;
-    align-items:center;
-    gap:8px;
-    padding:10px 12px;
-    border-radius:12px;
-    background: #f0f7f2;
-    width: max-content;
-  }
-  .dot {
-    width:8px;height:8px;border-radius:50%;background:#9bd7a8;opacity:0.9;
-    animation: bounce 1s infinite;
-  }
-  .dot:nth-child(2){ animation-delay: .15s }
-  .dot:nth-child(3){ animation-delay: .3s }
+  .typing { display:flex; align-items:center; gap:8px; padding:10px 12px; border-radius:12px; background: #f0f7f2; width: max-content; }
+  .dot { width:8px; height:8px; border-radius:50%; background:#9bd7a8; opacity:0.9; animation: bounce 1s infinite; }
+  .dot:nth-child(2){ animation-delay:.15s }
+  .dot:nth-child(3){ animation-delay:.3s }
   @keyframes bounce { 0% { transform: translateY(0) } 50% { transform: translateY(-6px) } 100% { transform: translateY(0) } }
 
-  /* right: info panel */
+  /* info panel */
   .info-panel {
     padding:18px;
     border-left:1px solid rgba(15,169,88,0.04);
@@ -120,14 +110,11 @@
   .info-panel h4 { margin:0 0 8px 0 }
   .info-list { list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--muted) }
   .info-item { display:flex;gap:10px;align-items:flex-start }
-  .chip { background: #fff; border-radius:8px; padding:8px 10px; font-weight:600; color:var(--eco-green); box-shadow: 0 6px 14px rgba(15,169,88,0.04) }
+  .chip { background:#fff;border-radius:8px;padding:8px 10px;font-weight:600;color:var(--eco-green); box-shadow:0 6px 14px rgba(15,169,88,0.04) }
 
   /* input area */
   .chat-input-wrap {
-    display:flex;
-    gap:10px;
-    padding:14px 18px;
-    border-top:1px solid rgba(0,0,0,0.04);
+    display:flex; gap:10px; padding:14px 18px; border-top:1px solid rgba(0,0,0,0.04);
     background: linear-gradient(180deg, rgba(255,255,255,0.97), rgba(255,255,255,0.95));
     align-items:center;
   }
@@ -140,15 +127,8 @@
     font-size:15px;
   }
   .chat-input:focus { box-shadow:0 6px 18px rgba(15,169,88,0.08); border-color:var(--eco-green-soft) }
-
   .btn-send {
-    background: var(--eco-green);
-    color:#fff;
-    border:none;
-    padding:10px 14px;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:700;
+    background: var(--eco-green); color:#fff; border:none; padding:10px 14px; border-radius:10px; cursor:pointer; font-weight:700;
   }
   .btn-send:active{ transform:translateY(1px) }
 
@@ -173,7 +153,6 @@
       </div>
 
       <div id="chat-container" aria-live="polite" role="log">
-        <!-- messages will be injected here -->
         <div class="msg bot" id="welcome">
           <div class="avatar-sm">🤖</div>
           <div class="bubble">Halo! 👋 Aku EcoBot. Tanyakan tentang cara memilah sampah atau jenis sampah yang ingin kamu ketahui.</div>
@@ -214,99 +193,80 @@
 </div>
 
 <script>
-  // Helper: create element safely
-  function createMessageElement({ who = 'bot', text = '', time = null }) {
-    const wrapper = document.createElement('div');
-    wrapper.className = 'msg ' + (who === 'user' ? 'user' : 'bot');
+const API_URL = 'http://localhost:8000/api/chatbot';
 
-    const avatar = document.createElement('div');
-    avatar.className = 'avatar-sm';
-    avatar.textContent = who === 'user' ? 'K' : '🤖';
+function createMessageElement({ who='bot', text='' }) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'msg ' + (who==='user'?'user':'bot');
 
-    const bubble = document.createElement('div');
-    bubble.className = 'bubble';
-    bubble.innerHTML = text;
+  const avatar = document.createElement('div');
+  avatar.className = 'avatar-sm';
+  avatar.textContent = who==='user'?'K':'🤖';
 
-    wrapper.appendChild(avatar);
-    wrapper.appendChild(bubble);
+  const bubble = document.createElement('div');
+  bubble.className = 'bubble';
+  bubble.innerHTML = text;
 
-    return wrapper;
-  }
+  wrapper.appendChild(avatar);
+  wrapper.appendChild(bubble);
 
-  // Elements
-  const chatContainer = document.getElementById('chat-container');
-  const userInput = document.getElementById('userMessage');
-  const sendBtn = document.getElementById('sendBtn');
-  const typingIndicator = document.getElementById('typingIndicator');
+  return wrapper;
+}
 
-  function scrollToBottom() {
-    chatContainer.scrollTop = chatContainer.scrollHeight;
-  }
+const chatContainer = document.getElementById('chat-container');
+const userInput = document.getElementById('userMessage');
+const sendBtn = document.getElementById('sendBtn');
+const typingIndicator = document.getElementById('typingIndicator');
 
-  function showTyping(show = true) {
-    typingIndicator.style.display = show ? 'block' : 'none';
-  }
+function scrollToBottom(){ chatContainer.scrollTop = chatContainer.scrollHeight; }
+function showTyping(show=true){ typingIndicator.style.display = show?'block':'none'; }
 
-  async function handleSend() {
-    const text = userInput.value.trim();
-    if (!text) return;
+async function handleSend(){
+  const text = userInput.value.trim();
+  if(!text) return;
 
-    // User message
-    const userEl = createMessageElement({ who: 'user', text });
-    chatContainer.appendChild(userEl);
-    scrollToBottom();
-    userInput.value = '';
-
-    showTyping(true);
-
-    try {
-      // 🔥 FIXED: route harus /chatbot (bukan /chat)
-      const res = await fetch('/chatbot', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-          'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || ''
-        },
-        body: JSON.stringify({ message: text })
-      });
-
-      if (!res.ok) {
-        throw new Error('Network error');
-      }
-
-      const json = await res.json();
-      const botResponse = json.reply ?? "Maaf, aku tidak bisa menjawab pertanyaan itu.";
-
-
-      // Bot reply
-      const botEl = createMessageElement({ who: 'bot', text: botResponse });
-      chatContainer.appendChild(botEl);
-      scrollToBottom();
-
-    } catch (err) {
-      const errorEl = createMessageElement({ who: 'bot', text: "Terjadi kesalahan jaringan. Coba beberapa saat lagi." });
-      chatContainer.appendChild(errorEl);
-      scrollToBottom();
-      console.error(err);
-    } finally {
-      showTyping(false);
-    }
-  }
-
-  sendBtn.addEventListener('click', handleSend);
-
-  userInput.addEventListener('keydown', function(e){
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      handleSend();
-    }
-  });
-
-  function openGuide() {
-    alert('Contoh: "Botol plastik masuk kategori apa?"\nEcoSort mendeteksi Plastik, Kertas, Logam.');
-  }
-
+  const userEl = createMessageElement({who:'user', text});
+  chatContainer.appendChild(userEl);
   scrollToBottom();
+  userInput.value='';
+
+  showTyping(true);
+
+  try{
+    const res = await fetch(API_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({message:text})
+    });
+
+    if(!res.ok) throw new Error('Network error');
+
+    const json = await res.json();
+    const botEl = createMessageElement({who:'bot', text: json.reply || 'Maaf, aku tidak bisa menjawab.'});
+    chatContainer.appendChild(botEl);
+    scrollToBottom();
+  } catch(err){
+    const errorEl = createMessageElement({who:'bot', text:"Terjadi kesalahan jaringan. Coba beberapa saat lagi."});
+    chatContainer.appendChild(errorEl);
+    scrollToBottom();
+    console.error(err);
+  } finally{
+    showTyping(false);
+  }
+}
+
+sendBtn.addEventListener('click', handleSend);
+userInput.addEventListener('keydown', e=>{
+  if(e.key==='Enter' && !e.shiftKey){
+    e.preventDefault();
+    handleSend();
+  }
+});
+
+function openGuide(){
+  alert('Contoh: "Botol plastik masuk kategori apa?"\nEcoSort mendeteksi Plastik, Kertas, Logam.');
+}
+
+scrollToBottom();
 </script>
 @endsection
